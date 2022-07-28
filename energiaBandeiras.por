@@ -13,7 +13,7 @@ programa
 		leia(leiturafinal)
 		escreva("Entre com o valor do kWh em Reais: \n")
 		leia(valor)
-		escreva("Entre com a cor da bandeira da conta de energia para o mês: Digite (V) para Vermelha ou (A) para Amarela. \n")
+		escreva("Entre com a cor da bandeira da conta de energia para o mês: Digite (V) para Vermelha, (A) para Amarela ou (E) para verde \n")
 		leia(bandeira)
 
 
@@ -33,6 +33,8 @@ programa
 			caso 'A':
 			contaFinal = conta + conta * 0.10
 			pare
+			caso 'E':
+			contaFinal = conta
 			caso contrario:
 			escreva("Bandeira inválida. Informe corretamente a cor da bandeira da conta de energia: amarela ou vermelha")
 		}
@@ -48,7 +50,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 484; 
+ * @POSICAO-CURSOR = 500; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
